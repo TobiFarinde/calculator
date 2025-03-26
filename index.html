@@ -19,7 +19,7 @@
     <script src="script.js">
 
         let userInput = document.getElementById("date") ;
-        userInput.max = new Date().toISOString().split("T")[0];
+        userInput.max = new Date().toIsOstring().split("T")[0];
 
         function calculateAge(){
            let birthDate = new Date(userInput.value);
@@ -61,6 +61,14 @@ d3 = getDaysInMonth(y1, m1) + d2 - d1;
         function getDaysInMonth(year, month) {
             return new Date(year, month, 0).getDate();
         }
+
+        let di = birthDate.getDate();
+           let m1 = birthDate.getMonth() + 1;
+           let y1 = birthDate.getFullYear();
+
+           let di = birthDate.getDate();
+           let m1 = birthDate.getMonth() + 1;
+           let y1 = birthDate.getFullYear();
     </script>
 </body>
 </html>
